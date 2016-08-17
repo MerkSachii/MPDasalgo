@@ -11,7 +11,11 @@ public class Person {
 //	Constructor
 	
 	public Person() {
+<<<<<<< HEAD
+		// Do Something
+=======
 		
+>>>>>>> refs/remotes/origin/eldes
 	}
 //	
 //
