@@ -1,27 +1,40 @@
 package edu.dasalgo.java;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Building {
 	ArrayList<Elevator> elevatorlist = new ArrayList<Elevator>();
-	ArrayList<Person> personlist = new ArrayList<Person>();
+	Queue<Person> personlist = new LinkedList<Person>();
 	ArrayList<ArrayList<Person>> peopleline = new ArrayList <ArrayList<Person>>();
 	
 	
 	
 	public Building(ArrayList<Elevator> elevatorlist) {
 		super();
-		this.elevatorlist = elevatorlist;
-		this.personlist = personlist;
+		Elevator elevator1 = this.addElevator();
+		Elevator elevator2 = this.addElevator();
+		Elevator elevator3 = this.addElevator();
+
 	}
 	
-	public ArrayList<Person> getPersonlist() {
+	
+
+	public Queue<Person> getPersonlist() {
 		return personlist;
 	}
 
-
-	public void setPersonlist(ArrayList<Person> personlist) {
+	public void setPersonlist(Queue<Person> personlist) {
 		this.personlist = personlist;
+	}
+
+	public ArrayList<ArrayList<Person>> getPeopleline() {
+		return peopleline;
+	}
+
+	public void setPeopleline(ArrayList<ArrayList<Person>> peopleline) {
+		this.peopleline = peopleline;
 	}
 
 	public ArrayList<Elevator> getElevatorlist() {
